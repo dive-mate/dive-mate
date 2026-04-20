@@ -257,3 +257,51 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     line-height: 14px !important;
     text-align: left !important;
 }
+
+
+/* Program overview table */
+table.program-overview {
+    width: 900px;
+    margin: 24px auto 36px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #ffffff;
+}
+
+table.program-overview th,
+table.program-overview td {
+    border: 1px solid #808080;
+    padding: 14px 12px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.4em;
+}
+
+table.program-overview th {
+    background: #4d74d9;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+table.program-overview td {
+    font-size: 1.05em;
+    color: #202020;
+}
+
+table.program-overview td:first-child {
+    width: 140px;
+    font-weight: bold;
+}
+
+table.program-overview td:nth-child(2) {
+    width: 170px;
+    white-space: nowrap;
+}
+
+table.program-overview td[colspan="3"],
+table.program-overview td[colspan="4"] {
+    text-align: center;
+    font-weight: 500;
+}
