@@ -210,11 +210,11 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 18px;
 }
 
 .organizer-card {
-    width: 170px;
+    width: 160px;
     background: #ffffff;
     border-radius: 8px;
     overflow: hidden;
@@ -224,14 +224,14 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 .organizer-card img {
     display: block;
-    width: 170px;
-    height: 190px;
+    width: 160px;
+    height: 180px;
     object-fit: cover;
 }
 
 .organizer-info {
     padding: 10px 10px 12px 10px;
-    height: 62px;
+    height: 58px;
     overflow: hidden;
 }
 
@@ -242,8 +242,8 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     clear: none !important;
     color: #202020 !important;
     font-family: 'Roboto', sans-serif !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
+    font-size: 13px !important;
+    line-height: 16px !important;
     font-weight: 700 !important;
     text-shadow: none !important;
 }
@@ -253,7 +253,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     padding: 0 !important;
     width: auto !important;
     color: #8a8a8a !important;
-    font-size: 12px !important;
-    line-height: 15px !important;
+    font-size: 11px !important;
+    line-height: 14px !important;
     text-align: left !important;
 }
