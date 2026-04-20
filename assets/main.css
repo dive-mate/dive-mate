@@ -275,6 +275,9 @@ table.program-overview td {
     text-align: center;
     vertical-align: middle;
     line-height: 1.4em;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 table.program-overview th {
@@ -286,7 +289,7 @@ table.program-overview th {
 }
 
 table.program-overview td {
-    font-size: 1.05em;
+    font-size: 1.00em;
     color: #202020;
 }
 
