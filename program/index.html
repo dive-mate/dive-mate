@@ -107,94 +107,6 @@
 
 <div class="talk-list">
 
-    <div class="talk-item">
-        <div class="talk-photo">
-            <div class="speaker-photo">
-                <img src="assets/han.png" alt="Han Zhang">
-            </div>
-            <div class="speaker-name">
-            <a href="https://zhanghan-tc.github.io/" target="_blank">Han Zhang</a>
-        </div>
-            <div class="speaker-affiliation">Shanghai Jiao Tong University</div>
-        </div>
-        <div class="talk-content">
-            <h3>Trajectory Planning: Objective Functions, Feedback, and Solution Methods</h3>
-            <p class="talk-abstract">
-                The core problem of trajectory planning can be understood through three tightly coupled questions:
-                what to plan for, what information to plan with, and how to solve the resulting problem efficiently.
-                This talk presents our recent studies and reflections on trajectory planning
-                for robots and intelligent vehicles along the line of objective functions, feedback, and solution methods.
-                First, on objective design, the talk discusses how Inverse Optimal Control (IOC) can be used to recover
-                latent task goals and trade-off mechanisms from expert behavior or historical data, reducing the need
-                for manually crafted cost functions and making planning better aligned with task requirements and real
-                behavior patterns. Second, on feedback construction, the talk combines SLAM and environment perception
-                to show how localization, mapping, and scene understanding can provide reliable state feedback and
-                environmental constraints, turning planning from offline geometric generation into perception-driven
-                closed-loop decision making. Finally, on solution methods, the talk introduces two representative
-                optimization frameworks: one for planning under uncertainty, where safe trajectory generation must
-                cope with perception error and environmental uncertainty, and another for motion planning of articulated
-                vehicles on curved roads using warm-start techniques. Overall, the talk argues that high-quality trajectory
-                planning is not merely a numerical optimization problem, but a system problem that deeply couples goal
-                learning, environmental feedback, and real-time solving.
-            </p>
-        </div>
-    </div>
-
-    <div class="talk-item reverse">
-    <div class="talk-photo">
-        <div class="speaker-photo has-bio">
-            <img src="assets/boyu.jpg" alt="Boyu Zhou">
-            <div class="speaker-bio-tooltip">
-                Prof. Zhou has published papers in prestigious robotics journals and conferences, including TRO, TASE, RAL, RSS, ICRA, and IROS.
-                His team's work has been recognized with the 2023 IEEE Transactions on Robotics Best Paper Award, the 2023 IEEE RAL Best Paper Award,
-                and was a finalist for the 2024 IEEE ICRA Best Paper Award on Unmanned Aerial Vehicles.
-                His publications have been listed as popular papers in TRO and RAL, with the highest ranking of No. 1.
-                He serves as an Associate Editor of IEEE TRO and is listed in Stanford's World's Top 2% Scientists.
-            </div>
-        </div>
-        <div class="speaker-name">
-            <a href="https://robotics-star.com/" target="_blank">Boyu Zhou</a>
-        </div>
-        <div class="speaker-affiliation">Southern University of Science and Technology</div>
-    </div>
-
-    <div class="talk-content">
-        <h3>Foundation Models for Aerial Embodied Intelligence</h3>
-        <p class="talk-abstract">
-            Robotics is entering a new stage in which data-driven methods and foundation models are deeply integrated, forming a key driver of advances in robot autonomy, while fine manipulation and complex interaction in real environments are increasingly important. This talk focuses on aerial embodied intelligence and presents a systematic line of explorations from autonomous navigation to higher-level capabilities. At the navigation level, it discusses how generative models improve perception in challenging environments such as glass and mirror scenes, enabling robust flight. For exploration in unknown environments, it introduces a lightweight scene representation and efficient planning framework for large-scale exploration. It then shows how vision-language foundation models support zero-shot UAV navigation, object-goal navigation, and on-the-fly 3D scene scanning. Finally, the talk discusses applications of whole-body planning in aerial load transportation systems and high-speed mobile manipulation.
-        </p>
-    </div>
-</div>
-    <div class="talk-item">
-        <div class="talk-photo">
-            <div class="speaker-photo has-bio">
-                <img src="assets/zipeng.jpg" alt="Zipeng Dai">
-                <div class="speaker-bio-tooltip">
-                    Zipeng Dai is a Young Scientist and Head of Agile AI Flight at Differential Robotics (Hangzhou).
-                    He received both his B.Eng. and Ph.D. from the School of Computer Science at Beijing Institute of Technology,
-                    won the National Scholarship for Doctoral Students twice, has published more than ten papers in top venues
-                    such as TMC, INFOCOM, and ICDE, and received the Runner-up Award for Best Paper at KDD 2021.
-                </div>
-            </div>
-            <div class="speaker-name">
-            <a href="https://zipengdai.com/" target="_blank">Zipeng Dai</a>
-        </div>
-            <div class="speaker-affiliation">Differential Robotics (Hangzhou)</div>
-        </div>
-        <div class="talk-content">
-            <h3>Toward Open-Source, Deployable, and Application-Oriented Aerial Embodied Intelligence</h3>
-            <p class="talk-abstract">
-                Centered on the theme of open-source, deployment, and real-world application, this talk reviews the team's
-                exploration from the FAST Lab stage to its engineering and industrial development at
-                Differential Robotics. It summarizes a line of work on autonomous UAV flight, end-to-end control, perception
-                and decision making in complex environments, and reflects on how these efforts evolved from academic research
-                into deployable systems. A key lesson is that the core of aerial intelligence does not lie
-                in isolated algorithmic advances, but in the closed-loop unification of perception, planning and control,
-                decision making, world modeling, and real-system deployment. Based on this perspective, the talk outlines a
-                practical path through which aerial embodied intelligence can move from laboratory validation to real-world use.
-            </p>
-        </div>
-    </div>
 
     <div class="talk-item reverse">
         <div class="talk-photo">
@@ -231,6 +143,64 @@
             </p>
         </div>
     </div>
+    
+    <div class="talk-item">
+        <div class="talk-photo">
+            <div class="speaker-photo has-bio">
+                <img src="assets/zipeng.jpg" alt="Zipeng Dai">
+                <div class="speaker-bio-tooltip">
+                    Zipeng Dai is a Young Scientist and Head of Agile AI Flight at Differential Robotics (Hangzhou).
+                    He received both his B.Eng. and Ph.D. from the School of Computer Science at Beijing Institute of Technology,
+                    won the National Scholarship for Doctoral Students twice, has published more than ten papers in top venues
+                    such as TMC, INFOCOM, and ICDE, and received the Runner-up Award for Best Paper at KDD 2021.
+                </div>
+            </div>
+            <div class="speaker-name">
+            <a href="https://zipengdai.com/" target="_blank">Zipeng Dai</a>
+        </div>
+            <div class="speaker-affiliation">Differential Robotics (Hangzhou)</div>
+        </div>
+        <div class="talk-content">
+            <h3>Toward Open-Source, Deployable, and Application-Oriented Aerial Embodied Intelligence</h3>
+            <p class="talk-abstract">
+                Centered on the theme of open-source, deployment, and real-world application, this talk reviews the team's
+                exploration from the FAST Lab stage to its engineering and industrial development at
+                Differential Robotics. It summarizes a line of work on autonomous UAV flight, end-to-end control, perception
+                and decision making in complex environments, and reflects on how these efforts evolved from academic research
+                into deployable systems. A key lesson is that the core of aerial intelligence does not lie
+                in isolated algorithmic advances, but in the closed-loop unification of perception, planning and control,
+                decision making, world modeling, and real-system deployment. Based on this perspective, the talk outlines a
+                practical path through which aerial embodied intelligence can move from laboratory validation to real-world use.
+            </p>
+        </div>
+    </div>
+
+    
+    <div class="talk-item reverse">
+    <div class="talk-photo">
+        <div class="speaker-photo has-bio">
+            <img src="assets/boyu.jpg" alt="Boyu Zhou">
+            <div class="speaker-bio-tooltip">
+                Prof. Zhou has published papers in prestigious robotics journals and conferences, including TRO, TASE, RAL, RSS, ICRA, and IROS.
+                His team's work has been recognized with the 2023 IEEE Transactions on Robotics Best Paper Award, the 2023 IEEE RAL Best Paper Award,
+                and was a finalist for the 2024 IEEE ICRA Best Paper Award on Unmanned Aerial Vehicles.
+                His publications have been listed as popular papers in TRO and RAL, with the highest ranking of No. 1.
+                He serves as an Associate Editor of IEEE TRO and is listed in Stanford's World's Top 2% Scientists.
+            </div>
+        </div>
+        <div class="speaker-name">
+            <a href="https://robotics-star.com/" target="_blank">Boyu Zhou</a>
+        </div>
+        <div class="speaker-affiliation">Southern University of Science and Technology</div>
+    </div>
+
+    <div class="talk-content">
+        <h3>Foundation Models for Aerial Embodied Intelligence</h3>
+        <p class="talk-abstract">
+            Robotics is entering a new stage in which data-driven methods and foundation models are deeply integrated, forming a key driver of advances in robot autonomy, while fine manipulation and complex interaction in real environments are increasingly important. This talk focuses on aerial embodied intelligence and presents a systematic line of explorations from autonomous navigation to higher-level capabilities. At the navigation level, it discusses how generative models improve perception in challenging environments such as glass and mirror scenes, enabling robust flight. For exploration in unknown environments, it introduces a lightweight scene representation and efficient planning framework for large-scale exploration. It then shows how vision-language foundation models support zero-shot UAV navigation, object-goal navigation, and on-the-fly 3D scene scanning. Finally, the talk discusses applications of whole-body planning in aerial load transportation systems and high-speed mobile manipulation.
+        </p>
+    </div>
+</div>
 
     <div class="talk-item">
         <div class="talk-photo">
@@ -256,6 +226,43 @@
             </p>
         </div>
     </div>
+    
+    <div class="talk-item">
+        <div class="talk-photo">
+            <div class="speaker-photo">
+                <img src="assets/han.png" alt="Han Zhang">
+            </div>
+            <div class="speaker-name">
+            <a href="https://zhanghan-tc.github.io/" target="_blank">Han Zhang</a>
+        </div>
+            <div class="speaker-affiliation">Shanghai Jiao Tong University</div>
+        </div>
+        <div class="talk-content">
+            <h3>Trajectory Planning: Objective Functions, Feedback, and Solution Methods</h3>
+            <p class="talk-abstract">
+                The core problem of trajectory planning can be understood through three tightly coupled questions:
+                what to plan for, what information to plan with, and how to solve the resulting problem efficiently.
+                This talk presents our recent studies and reflections on trajectory planning
+                for robots and intelligent vehicles along the line of objective functions, feedback, and solution methods.
+                First, on objective design, the talk discusses how Inverse Optimal Control (IOC) can be used to recover
+                latent task goals and trade-off mechanisms from expert behavior or historical data, reducing the need
+                for manually crafted cost functions and making planning better aligned with task requirements and real
+                behavior patterns. Second, on feedback construction, the talk combines SLAM and environment perception
+                to show how localization, mapping, and scene understanding can provide reliable state feedback and
+                environmental constraints, turning planning from offline geometric generation into perception-driven
+                closed-loop decision making. Finally, on solution methods, the talk introduces two representative
+                optimization frameworks: one for planning under uncertainty, where safe trajectory generation must
+                cope with perception error and environmental uncertainty, and another for motion planning of articulated
+                vehicles on curved roads using warm-start techniques. Overall, the talk argues that high-quality trajectory
+                planning is not merely a numerical optimization problem, but a system problem that deeply couples goal
+                learning, environmental feedback, and real-time solving.
+            </p>
+        </div>
+    </div>
+
+    
+
+    
 
 </div>
 
