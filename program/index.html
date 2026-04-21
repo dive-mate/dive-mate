@@ -99,10 +99,175 @@
     </tr>
 </table>
 
+    <h2>Featured Talks</h2>
+<p>
+    The following invited talks cover trajectory planning, aerial embodied intelligence,
+    humanoid intelligence, and general embodied AI.
+</p>
+
+<div class="talk-list">
+
+    <div class="talk-item">
+        <div class="talk-photo">
+            <div class="speaker-photo">
+                <img src="assets/han.png" alt="Han Zhang">
+            </div>
+            <div class="speaker-name">Han Zhang</div>
+        </div>
+        <div class="talk-content">
+            <h3>Trajectory Planning: Objective Functions, Feedback, and Solution Methods</h3>
+            <p class="talk-abstract">
+                The core problem of trajectory planning can be understood through three tightly coupled questions:
+                what to plan for, what information to plan with, and how to solve the resulting problem efficiently
+                and reliably. This talk presents several of our recent studies and reflections on trajectory planning
+                for robots and intelligent vehicles along the line of objective functions, feedback, and solution methods.
+                First, on objective design, the talk discusses how Inverse Optimal Control (IOC) can be used to recover
+                latent task goals and trade-off mechanisms from expert behavior or historical data, reducing the need
+                for manually crafted cost functions and making planning better aligned with task requirements and real
+                behavior patterns. Second, on feedback construction, the talk combines SLAM and environment perception
+                to show how localization, mapping, and scene understanding can provide reliable state feedback and
+                environmental constraints, turning planning from offline geometric generation into perception-driven
+                closed-loop decision making. Finally, on solution methods, the talk introduces two representative
+                optimization frameworks: one for planning under uncertainty, where safe trajectory generation must
+                cope with perception error and environmental uncertainty, and another for motion planning of articulated
+                vehicles on curved roads using warm-start techniques. Overall, the talk argues that high-quality trajectory
+                planning is not merely a numerical optimization problem, but a system problem that deeply couples goal
+                learning, environmental feedback, and real-time solving.
+            </p>
+        </div>
+    </div>
+
+    <div class="talk-item reverse">
+        <div class="talk-photo">
+            <div class="speaker-photo">
+                <img src="assets/boyu.jpg" alt="Boyu Zhou">
+            </div>
+            <div class="speaker-name">Boyu Zhou</div>
+        </div>
+        <div class="talk-content">
+            <h3>Foundation Models for Aerial Embodied Intelligence</h3>
+            <p class="talk-abstract">
+                Robotics is entering a new stage in which data-driven methods and foundation models are becoming deeply
+                integrated, forming a key driver of continual advances in robot autonomy, while fine manipulation and
+                complex interaction in real environments are becoming increasingly important. This talk focuses on aerial
+                embodied intelligence and presents a systematic line of initial explorations ranging from basic autonomous
+                navigation to higher-level operational capabilities. At the navigation level, it discusses how generative
+                models can improve perception in highly challenging environments such as glass and mirror scenes, enabling
+                robust autonomous flight. For exploration in unknown environments, it introduces a lightweight scene
+                representation and efficient planning framework for large-scale, high-efficiency autonomous exploration.
+                It then shows how vision-language foundation models can support zero-shot UAV navigation, object-goal
+                navigation, and on-the-fly 3D scene scanning. Finally, the talk discusses applications of whole-body
+                planning in aerial load transportation systems and high-speed mobile manipulation scenarios.
+            </p>
+        </div>
+    </div>
+
+    <div class="talk-item">
+        <div class="talk-photo">
+            <div class="speaker-photo has-bio">
+                <img src="assets/zipeng.jpg" alt="Zipeng Dai">
+                <div class="speaker-bio-tooltip">
+                    Zipeng Dai is a Young Scientist and Head of Agile AI Flight at Differential Robotics (Hangzhou).
+                    He received both his B.Eng. and Ph.D. from the School of Computer Science at Beijing Institute of Technology,
+                    won the National Scholarship for Doctoral Students twice, has published more than ten papers in top venues
+                    such as TMC, INFOCOM, and ICDE, and received the Runner-up Award for Best Paper at KDD 2021.
+                </div>
+            </div>
+            <div class="speaker-name">Zipeng Dai</div>
+            <div class="speaker-affiliation">Differential Robotics (Hangzhou)</div>
+        </div>
+        <div class="talk-content">
+            <h3>Toward Open-Source, Deployable, and Application-Oriented Aerial Embodied Intelligence</h3>
+            <p class="talk-abstract">
+                Centered on the theme of open-source, deployment, and real-world application, this talk reviews the team's
+                sustained exploration from the FAST Lab stage to its later engineering and industrial development at
+                Differential Robotics. It summarizes a line of work on autonomous UAV flight, end-to-end control, perception
+                and decision making in complex environments, and reflects on how these efforts evolved from academic research
+                into deployable systems. A key lesson from this journey is that the core of aerial intelligence does not lie
+                in isolated algorithmic advances, but in the closed-loop unification of perception, planning and control,
+                decision making, world modeling, and real-system deployment. Based on this perspective, the talk outlines a
+                practical path through which aerial embodied intelligence can move from laboratory validation to real-world use.
+            </p>
+        </div>
+    </div>
+
+    <div class="talk-item reverse">
+        <div class="talk-photo">
+            <div class="speaker-photo has-bio">
+                <img src="assets/zhongyu.jpg" alt="Zhongyu Li">
+                <div class="speaker-bio-tooltip">
+                    Dr. Zhongyu Li is an Assistant Professor in the Department of Mechanical and Automation Engineering
+                    at The Chinese University of Hong Kong. He received his Ph.D. in Mechanical Engineering from UC Berkeley
+                    in 2025 and his B.Eng. in Mechatronics Engineering from Zhejiang University in 2019. His work has been
+                    recognized by several best paper finalist honors at IROS and ICRA, and he was selected as an RSS Pioneer
+                    and a Rising Star in Mechanical Engineering in 2023.
+                </div>
+            </div>
+            <div class="speaker-name">Zhongyu Li</div>
+            <div class="speaker-affiliation">The Chinese University of Hong Kong</div>
+        </div>
+        <div class="talk-content">
+            <h3>From Robot Cerebellum to Robot Brain</h3>
+            <p class="talk-abstract">
+                Bipedal humanoids have the potential to transform work in human environments, but many core challenges remain
+                unresolved. This talk first revisits our earlier work on unlocking the agility of legged robots through
+                reinforcement learning. We developed a generalized motion-tracking control framework that enabled bipedal robots
+                to execute a wide range of highly dynamic skills, including targeted standing jumps, running a 400-meter dash,
+                and traversing challenging terrain. This line of work helped catalyze recent RL-based humanoid locomotion
+                controllers built on motion imitation. We then extended these capabilities beyond locomotion to support
+                intelligent loco-manipulation and multi-agent interaction, pushing legged robots toward more functional
+                real-world behavior. Conceptually, this line of research addresses the problem of the robot cerebellum:
+                controllers that provide robust, adaptive, and athletic mobility. Building on this foundation, the talk
+                introduces our current work at CUHK, where we aim to move from robot cerebellum to robot brain by using
+                multimodal data to endow humanoid robots not only with dynamic locomotion, but also with generalizable
+                whole-body manipulation, task-level reasoning, and safe, interactive intelligence.
+            </p>
+        </div>
+    </div>
+
+    <div class="talk-item">
+        <div class="talk-photo">
+            <div class="speaker-photo has-bio">
+                <img src="assets/chenjia.png" alt="Chenjia Bai">
+                <div class="speaker-bio-tooltip">
+                    Chenjia Bai is a Research Scientist at the China Telecom Artificial Intelligence Research Institute (TeleAI)
+                    and Director of its Embodied Intelligence Research Center. His work focuses on the “brain” and “cerebellum”
+                    of embodied intelligence, including cross-embodiment adaptation, dexterous manipulation planning, and
+                    data synthesis. He has published more than sixty papers, led multiple national and municipal projects,
+                    and his work has been recognized by awards and media coverage including WAIC, MIT Technology Review, and CCTV.
+                </div>
+            </div>
+            <div class="speaker-name">Chenjia Bai</div>
+            <div class="speaker-affiliation">TeleAI</div>
+        </div>
+        <div class="talk-content">
+            <h3>A Brain-and-Cerebellum Capability Foundation for General Embodied Intelligence</h3>
+            <p class="talk-abstract">
+                This talk discusses a collaborative “brain-and-cerebellum” capability foundation for general embodied intelligence
+                and presents the TeleAI team's work on building embodied agents with both cognitive decision-making and motion
+                control abilities. On the cerebellum side, the team has developed a high-dynamic whole-body motion control
+                framework in the KungfuBot series, enabling text-driven real-time motion generation, adaptation to complex
+                environments, soccer skills, and robust human-robot interaction. These efforts go beyond the limitations of
+                traditional control in dynamic balance and multimodal interaction. On the brain side, the team has proposed
+                the PRTS vision-language-action foundation model based on contrastive reinforcement learning, built the GN-0
+                end-to-end embodied navigation framework that unifies map-based and map-free navigation, and developed the
+                ATE cross-embodiment transfer method to improve VLA generalization across different robot platforms. To support
+                this foundation, the team has also created the TeleSim high-fidelity simulation data platform, a weakly
+                embodiment-dependent data collection system, and a matrix of full-size and compact humanoid platforms in the
+                TeleBot series. The system has already been validated in scenarios such as guidance, transportation, and
+                fine-grained manipulation, providing an integrated solution from data and models to embodied platforms.
+            </p>
+        </div>
+    </div>
+
+</div>
+
 <footer>
     &copy; 2026 D.I.V.E. Forum Organizing Committee
     &nbsp;|&nbsp; Design adapted from <a href="https://github.com/mikepierce">Mike Pierce</a>
 </footer>
+
+    
 
 </body>
 </html>
