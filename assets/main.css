@@ -310,6 +310,7 @@ table.program-overview td[colspan="4"] {
 }
 
 
+
 /* Featured talks */
 .talk-list {
     width: 900px;
@@ -323,6 +324,9 @@ table.program-overview td[colspan="4"] {
     margin: 40px 0 56px 0;
     padding: 20px 0 0 0;
     border-top: 1px solid #d8d8d8;
+    overflow: visible !important;
+    position: relative;
+    z-index: 1;
 }
 
 .talk-item.reverse {
@@ -333,6 +337,9 @@ table.program-overview td[colspan="4"] {
     width: 180px !important;
     flex: 0 0 180px !important;
     text-align: center;
+    overflow: visible !important;
+    position: relative;
+    z-index: 20;
 }
 
 .speaker-photo {
@@ -340,7 +347,8 @@ table.program-overview td[colspan="4"] {
     width: 180px !important;
     height: 220px !important;
     margin: 0 auto 12px auto;
-    overflow: hidden !important;
+    overflow: visible !important;
+    z-index: 30;
 }
 
 .speaker-photo img {
@@ -373,6 +381,9 @@ table.program-overview td[colspan="4"] {
 .talk-content {
     flex: 1 1 auto;
     min-width: 0;
+    overflow: visible !important;
+    position: relative;
+    z-index: 1;
 }
 
 .talk-content h3 {
@@ -406,8 +417,9 @@ table.program-overview td[colspan="4"] {
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.20);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.18s ease;
-    z-index: 100;
+    transition: opacity 0.18s ease, visibility 0.18s ease;
+    z-index: 9999;
+    pointer-events: none;
 }
 
 .speaker-bio-tooltip::after {
@@ -424,6 +436,16 @@ table.program-overview td[colspan="4"] {
 .speaker-photo.has-bio:hover .speaker-bio-tooltip {
     opacity: 1;
     visibility: visible;
+}
+
+.speaker-name a {
+    color: #202020;
+    text-decoration: none;
+}
+
+.speaker-name a:hover {
+    color: #813c54;
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -453,6 +475,8 @@ table.program-overview td[colspan="4"] {
         height: 220px !important;
         max-width: 180px !important;
         max-height: 220px !important;
+        min-width: 180px !important;
+        min-height: 220px !important;
     }
 
     .talk-content {
@@ -466,5 +490,9 @@ table.program-overview td[colspan="4"] {
     .talk-abstract {
         font-size: 16px;
         line-height: 1.7em;
+    }
+
+    .speaker-bio-tooltip {
+        width: 280px;
     }
 }
