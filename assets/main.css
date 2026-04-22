@@ -540,69 +540,47 @@ table.program-overview td[colspan="4"] {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1.5em;
-  font-size: 0.95em;
-  table-layout: fixed;
+  font-size: 0.98em;
 }
 
 .program-overview th,
 .program-overview td {
   border: 1px solid #d8d8d8;
-  padding: 10px 8px;
+  padding: 12px 10px;
   vertical-align: middle;
   text-align: center;
-  line-height: 1.45;
-  white-space: normal;
-  word-break: break-word;
-  overflow-wrap: anywhere;
-  hyphens: auto;
+  line-height: 1.5;
 }
 
 .program-overview th {
-  background: #4f73d9;
-  color: #ffffff;
+  background: #f4f4f4;
   font-weight: 700;
+}
+
+.program-overview td:first-child,
+.program-overview td:nth-child(2) {
+  white-space: nowrap;
 }
 
 .program-overview tr:nth-child(even) td {
   background: #fcfcfc;
 }
 
-/* Date column */
-.program-overview th:nth-child(1),
-.program-overview td:nth-child(1) {
-  width: 14%;
-}
-
-/* Time column */
-.program-overview th:nth-child(2),
-.program-overview td:nth-child(2) {
-  width: 16%;
-  white-space: nowrap;
-}
-
-/* Report Hall */
-.program-overview th:nth-child(3),
 .program-overview td:nth-child(3) {
-  width: 20%;
+  text-align: center;
 }
 
-/* Second-Floor Natatorium */
-.program-overview th:nth-child(4),
 .program-overview td:nth-child(4) {
-  width: 20%;
   background: #f3fbff;
 }
 
-/* First-Floor Exhibition Hall */
-.program-overview th:nth-child(5),
 .program-overview td:nth-child(5) {
-  width: 20%;
   background: #fff8f0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .program-overview {
-    font-size: 0.88em;
+    font-size: 0.9em;
   }
 
   .program-overview th,
