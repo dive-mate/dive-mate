@@ -535,3 +535,65 @@ table.program-overview td[colspan="4"] {
         width: 280px;
     }
 }
+
+
+.program-overview {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+  font-size: 0.98em;
+}
+
+.program-overview th,
+.program-overview td {
+  border: 1px solid #d8d8d8;
+  padding: 12px 10px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.program-overview th {
+  background: #f4f4f4;
+  font-weight: 700;
+}
+
+.program-overview td:first-child,
+.program-overview td:nth-child(2) {
+  white-space: nowrap;
+}
+
+.program-overview tr:nth-child(even) td {
+  background: #fcfcfc;
+}
+
+.program-overview td:nth-child(3) {
+  text-align: center;
+}
+
+.program-overview td:nth-child(4) {
+  background: #f3fbff;
+}
+
+.program-overview td:nth-child(5) {
+  background: #fff8f0;
+}
+
+@media screen and (max-width: 900px) {
+  .program-overview {
+    font-size: 0.9em;
+  }
+
+  .program-overview th,
+  .program-overview td {
+    padding: 8px 6px;
+  }
+}
+
+
+
+
+
+
+
+
