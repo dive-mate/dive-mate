@@ -588,3 +588,44 @@ table.program-overview td[colspan="4"] {
     padding: 8px 6px;
   }
 }
+
+/* Student organizers: smaller cards, 6 per row */
+.student-organizer-grid {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 12px;
+}
+
+.student-organizer-card {
+    width: 138px;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.student-organizer-card img {
+    display: block;
+    width: 138px;
+    height: 155px;
+    object-fit: cover;
+}
+
+.student-organizer-card .organizer-info {
+    padding: 8px 8px 10px 8px;
+    height: 54px;
+}
+
+.student-organizer-card .organizer-info h4 {
+    font-size: 12px !important;
+    line-height: 15px !important;
+}
+
+.student-organizer-card .organizer-info p {
+    font-size: 10px !important;
+    line-height: 13px !important;
+}
